@@ -14,7 +14,7 @@ function count() {
         char.innerHTML = text.value.length + " Characters";
         words.innerHTML = text.value.trim().split(/\s+/).length + " Words";
         lines.innerHTML = text.value.split("\n").length + " Lines";
-        symbols.innerHTML = text.value.split(/[!@#$%^&*()_+{};:'"<>,.?/-]/).length + " Symbols";
+        symbols.innerHTML = text.value.split(/[!@#$%^&*()_+{};:'"<>,.?/-=]/).length + " Symbols";
     }
 }
 text.addEventListener("input", count);
